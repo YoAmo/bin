@@ -53,6 +53,7 @@ usage() {
     printf "  -s <TEMP>   Temperatura a la que se apaga la Rpi\n"
     printf "  -t          Imprime en pantalla la temperatura actual\n"
     printf "  (Sin args)  Ejecuta usando los valores por defecto configurados.\n"
+    printf "  (crontab)   */5 * * * * /home/josea/bin/temp_control.sh >/dev/null 2>&1\n"
 }
 alerta_log() {
     printf "\nUSO DEL PROCESADOR:\n"
